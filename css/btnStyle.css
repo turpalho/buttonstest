@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding-top: 40px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    background-color: #242424;
+    
+}
+
+div {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.box {
+    margin: auto;
+    max-width: 393px;
+}
+
+.crypto {
+    min-width: 313px;
+    max-width: 313px;
+    height: 107px;
+    margin: auto;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.crypto a {
+    line-height: 107px;
+}
+
+.smart {
+    min-width: 313px;
+    max-width: 313px;
+    height: 73px;
+    margin: auto;
+    margin-top: 30px;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.smart a {
+    line-height: 73px;
+}
+
+.skalp {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.man {
+    min-width: 146px;
+    max-width: 146px;
+    height: 73px;
+    line-height: 73px;
+    margin: auto;
+    margin-right: 11px;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.man a {
+    line-height: 23px;
+}
+
+.woman {
+    min-width: 146px;
+    max-width: 146px;
+    height: 73px;
+    line-height: 73px;
+    margin: auto;
+    margin-left: 10px;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.woman a {
+    line-height: 23px;
+}
+
+.foot {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.kids {
+    min-width: 146px;
+    max-width: 146px;
+    height: 73px;
+    margin: auto;
+    margin-right: 11px;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.kids a {
+    line-height: 73px;
+}
+
+.faq {
+    min-width: 146px;
+    max-width: 146px;
+    height: 73px;
+    margin: auto;
+    margin-left: 10px;
+
+    background: #7391AA;
+    border-radius: 7px;
+}
+
+.faq a {
+    line-height: 73px;
+}
