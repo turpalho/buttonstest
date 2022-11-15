@@ -3,7 +3,8 @@ body{
     padding-top: 40px;
     box-sizing: border-box;
     font-family: "Montserrat";
-    background-color: #242424;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     
 }
 
@@ -27,7 +28,8 @@ a {
     height: 107px;
     margin: auto;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
@@ -42,7 +44,8 @@ a {
     margin: auto;
     margin-top: 30px;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
@@ -64,7 +67,8 @@ a {
     margin: auto;
     margin-right: 11px;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
@@ -80,7 +84,8 @@ a {
     margin: auto;
     margin-left: 10px;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
@@ -101,7 +106,8 @@ a {
     margin: auto;
     margin-right: 11px;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
@@ -116,7 +122,8 @@ a {
     margin: auto;
     margin-left: 10px;
 
-    background: #7391AA;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
 
