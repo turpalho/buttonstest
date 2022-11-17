@@ -3,42 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/btnStyle.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Jost&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <title>testBtns</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="box">
-        <div class="crypto" onclick="window.open('https://turpalho.github.io/landingtesting/','mywindow');">
-            <a href"#">Академия Криптохаляль</a>
-        </div>
-        <div class="smart">
-            <a href="?nextpage=1#https://turpalho.github.io/landingtesting/">Smart money</a>
-        </div>
-        <div class="skalp">
-            <div class="man" onclick="location.href='https://turpalho.github.io/landingAbout/';">
-                <a href="#"><p>Скальпинг для мужчин</p></a>
+    <div id="main">
+        <div id="main-sections">
+            <div class="main-section" onclick="loadMenu();">Академия Криптохаляль</div>
+            <div class="main-section" onclick="loadMoney();">Smart money</div>
+            <div class="main-skalp" onclick="loadSkalp();">
+                <div class="skalp">Скальпинг для мужчин</div>
+                <div class="skalp">Скальпинг для женщин</div>
             </div>
-            <div class="woman" onclick="location.href='https://turpalho.github.io/landingAbout/';">
-                <a href="#"><p>Скальпинг для женщин</p></a>
-            </div>
-        </div>
-        <div class="foot">
-            <div class="kids" onclick="location.href='https://turpalho.github.io/landingAbout/';">
-                <a href="#">Crypto Kids</a>
-            </div>
-            <div class="faq" onclick="location.href='?nextpage=1#https://turpalho.github.io/landingAbout/';">
-                <a href="#">FAQ</a>
+            <div class="main-foot">
+                <div class="foot" onclick="loadFaq();">Crypto Kids</div>
+                <div class="foot" onclick="loadFaq();">____FAQ____</div>
             </div>
         </div>
     </div>
-    <script src="https://webappcontent.telegram.org/js/jquery.min.js"></script>
-    <script> 
-        $('#regular_link').attr('href', $('#regular_link').attr('href') + location.hash);
+    <div id="abouts">
+        <div class="about-abouts">
+            <center>
+                <div class="item">
+                    <div class="item-text">
+                        <h3 class="akad">АКАДЕМИЯ</h3>
+                        <div class="navBox">
+                            <h1 class="crypto">CRYPTO</h1>
+                            <h1 class="halal">HALAL</h1>
+                        </nav>
+                    </div>
+                    <div class="animation">
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ZBDdP3/data.json"  background="transparent"  speed="1"  style="margin-bottom: 30px; margin-top: 30px; width: 274px; height: 176px;"  loop autoplay></lottie-player>
+                    </div>
+                    <!-- https://assets7.lottiefiles.com/packages/lf20_QPbPfUVWRe.json -->
+                    <div id="item-sl" class="item-slogan">
+                        <h4>Зарабатывай много. <br>Обучайся у лучших.</h4>
+                    </div>        
+                    <div id="support_btn" class="support_btn">
+                        <a class="btn" href="https://t.me/cryptohalal_ru_bot">НАПИСАТЬ</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        let menuBtns = document.getElementById("main-sections");
+        let aboutPage = document.getElementById("abouts")
+
+        let BackButton = window.Telegram.WebApp.BackButton;
+
+        let selectedSection = 'main';
+        
+        function loadMenu() {
+            menuBtns.style.display = "none";
+            aboutPage.style.display = "block";
+            BackButton.show();
+        }
+
+        function loadMain() {
+	
+            menuBtns.style.display = "grid";
+            aboutPage.style.display = "none";
+
+            /* Telegram WebApp */
+            if (BackButton.isVisible) {
+                BackButton.hide();
+            }
+        }
+
+        BackButton.onClick(function() {
+            loadMain();
+        })
     </script>
 </body>
 </html>
