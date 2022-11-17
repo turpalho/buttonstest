@@ -14,7 +14,6 @@ div {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 .box {
@@ -28,7 +27,7 @@ a {
     height: 107px;
     margin: auto;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
@@ -44,7 +43,7 @@ a {
     margin: auto;
     margin-top: 30px;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
@@ -67,7 +66,7 @@ a {
     margin: auto;
     margin-right: 11px;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
@@ -84,7 +83,7 @@ a {
     margin: auto;
     margin-left: 10px;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
@@ -106,7 +105,7 @@ a {
     margin: auto;
     margin-right: 11px;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
@@ -122,7 +121,7 @@ a {
     margin: auto;
     margin-left: 10px;
 
-    background-color: var(--tg-theme-button-color, #50a8eb);
+    background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border-radius: 7px;
 }
