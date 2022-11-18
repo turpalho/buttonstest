@@ -1,26 +1,6 @@
-body{
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-    background: rgba(8,11,30,1);
-    background-image: url('../img/light.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 120vh;
-    
-  }
 
 a {
     text-decoration: none;
-}
-  
-.box {
-    color: #fff;
-    display: block;
-    /* height: var(--tg-viewport-stable-height, 80vh); */
-    text-align: center;
-    margin: auto;
 }
 
 .item {
