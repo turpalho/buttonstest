@@ -9,7 +9,13 @@ body {
     user-select: none;
     font-family: "Jost";
     color: var(--tg-theme-text-color);
-    background-color: var(--tg-theme-secondary-bg-color);
+	
+    box-sizing: border-box;
+    background: rgba(8,11,30,1);
+    background-image: url('../img/light.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120vh;
 }
 
 #main {
