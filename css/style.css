@@ -7,7 +7,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: "Montserrat";
+    font-family: "Jost";
     color: var(--tg-theme-text-color);
     background-color: var(--tg-theme-secondary-bg-color);
 }
@@ -30,8 +30,8 @@ body {
 	justify-content: center;
 
 	border-radius: 20px;
-
-    background-color: var(--tg-theme-bg-color, #50a8eb);
+    color: var(--tg-theme-button-text-color, #fff);
+    background: var(--tg-theme-button-color, #7391AA);
 }
 
 .main-skalp {
@@ -50,8 +50,8 @@ body {
     text-align: center;
 
 	border-radius: 20px;
-
-    background-color: var(--tg-theme-bg-color, #50a8eb);
+    color: var(--tg-theme-button-text-color, #fff);
+    background: var(--tg-theme-button-color, #7391AA);
 }
 
 .main-foot {
@@ -70,8 +70,8 @@ body {
     text-align: center;
 
 	border-radius: 20px;
-
-    background-color: var(--tg-theme-bg-color, #50a8eb);
+    color: var(--tg-theme-button-text-color, #fff);
+    background: var(--tg-theme-button-color, #7391AA);
 }
 
 #abouts {
