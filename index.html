@@ -56,10 +56,11 @@
     </div>
 
     <script>
+        Telegram.WebApp.ready();
         let menuBtns = document.getElementById("main-sections");
         let aboutPage = document.getElementById("abouts")
 
-        let BackButton = Telegram.WebApp.BackButton;
+        let BackButton = window.Telegram.WebApp.BackButton;
         BackButton.hide();
 
         let selectedSection = 'main';
@@ -67,7 +68,9 @@
         function loadMenu() {
             menuBtns.style.display = "none";
             aboutPage.style.display = "block";
-            BackButton.show();
+            if (!BackButton.isVisible) {
+                BackButton.show();
+            }
         }
 
         function loadMain() {
